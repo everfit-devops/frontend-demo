@@ -3,4 +3,4 @@
 cd $(dirname $0)
 cd ../
 ls -al
-echo Done2
+echo Done
