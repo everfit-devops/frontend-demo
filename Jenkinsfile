@@ -19,10 +19,7 @@ pipeline {
   }
 
   stages {
-    stage('Build') {
-      when {
-        branch 'dev'
-      }
+    stage('Build') {  
       environment {
         USERNAME_PASSWORD = credentials('SAMPLE_USERNAME_PASSWORD_CREDENTIAL')
       }
