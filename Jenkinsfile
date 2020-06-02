@@ -24,7 +24,7 @@ pipeline {
         USERNAME_PASSWORD = credentials('SAMPLE_USERNAME_PASSWORD_CREDENTIAL')
       }
       steps {
-        sh 'echo "${currentBuild.getBuildCauses}"'
+        sh '''echo "${currentBuild.getBuildCauses}"'''
         sh 'printenv'
         sh 'ls -al'
         withCredentials(bindings: [file(credentialsId: 'SAMPLE_ENV_FILE', variable: 'envfile')]) {
