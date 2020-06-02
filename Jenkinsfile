@@ -33,6 +33,7 @@ pipeline {
         sh 'docker --version'
         sh 'docker-compose --version'
         sh 'bash ./ci/jenkin.sh'
+        sh 'echo OK'
       }
     }
   }
